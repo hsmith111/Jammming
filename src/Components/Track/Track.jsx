@@ -3,7 +3,7 @@ import './Track.css';
 function Track() {
     return (
         <>
-            <button>Save to Spotify</button>
+            {/* <button>Save to Spotify</button> */}
         </>
     );
 }
