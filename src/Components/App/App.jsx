@@ -8,8 +8,8 @@ import Track from '../Track/Track';
 function App() {
  return (
     <>
-        <SearchResults />
         <SearchBar />
+        <SearchResults />
         <Playlist />
         <Tracklist />
         <Track />
