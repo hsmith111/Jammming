@@ -14,3 +14,16 @@ body {
   padding: 2rem;
   text-align: center;
 }
+
+.container {
+  display: flex;
+  flex-direction: row; /* default: horizontal */
+  gap: 250px; /* optional spacing between components */
+}
+
+.box {
+  padding: 20px;
+  background-color: lightgray;
+  border: 1px solid #ccc;
+  flex: 1; /* make both components take equal space */
+}

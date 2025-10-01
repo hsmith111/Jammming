@@ -8,11 +8,13 @@ import Track from '../Track/Track';
 function App() {
  return (
     <>
+    <div>
         <SearchBar />
+    </div>
+    <div className="container">
         <SearchResults />
-        <Playlist />
         <Tracklist />
-        <Track />
+    </div>
     </>
  );
 }
