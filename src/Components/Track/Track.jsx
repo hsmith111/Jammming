@@ -20,11 +20,23 @@ function Track() {
         album: "The Burning Edge of Dawn",
         id: "3",
     },
-        {
+    {
         name: "What If",
         artist: "Cody Fry",
         album: "The End",
         id: "4",
+    },
+        {
+        name: "You Belong With Me",
+        artist: "Taylor Swift",
+        album: "Fearless",
+        id: "5",
+    },
+        {
+        name: "Waiting on the World to Change",
+        artist: "John Mayer",
+        album: "Continuum",
+        id: "6",
     }
 ];
     return (
