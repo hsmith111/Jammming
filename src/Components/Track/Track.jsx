@@ -1,10 +1,18 @@
 import './Track.css';
 
 function Track() {
+    const songInfo = {
+        name: "Hearing Double",
+        artist: "Jason Mraz",
+        album: "Look For The Good",
+        id: "",
+    };
     return (
-        <>
-            {/* <button>Save to Spotify</button> */}
-        </>
+        <div>
+            <p>{songInfo.name}</p>
+            <p>{songInfo.artist}</p>
+            <p>{songInfo.album}</p>
+        </div>
     );
 }
 

@@ -8,6 +8,7 @@ import Track from '../Track/Track';
 function App() {
  return (
     <>
+    <h1>Jammming</h1>
     <div>
         <SearchBar />
     </div>
