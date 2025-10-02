@@ -13,6 +13,7 @@ function App() {
         <SearchBar />
     </div>
     <div className="container">
+        <Playlist />
         <SearchResults />
         <Tracklist />
     </div>
