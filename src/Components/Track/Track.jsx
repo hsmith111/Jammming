@@ -1,7 +1,8 @@
 import './Track.css';
+import React, { useState } from 'react';
 
 function Track() {
-    const songs = [
+    const [songs, setSongs] = useState([
         {
         name: "Hearing Double",
         artist: "Jason Mraz",
@@ -38,15 +39,20 @@ function Track() {
         album: "Continuum",
         id: "6",
     }
-];
+]);
     return (
         <div>
             {songs.map((song) => (
+            <>
             <p key={song.id}><strong>{song.name}</strong>
             <br />
             <em>{song.artist}</em>
             <br />
-            {song.album}</p>
+            {song.album}
+            </p>
+            <button>+</button>
+            <hr></hr>
+            </>
             ))} 
         </div>
     );
