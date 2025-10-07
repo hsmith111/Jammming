@@ -13,7 +13,7 @@ function App() {
         <SearchBar />
     </div>
     <div className="container">
-        <Playlist />
+        {/* <Playlist /> */}
         <SearchResults />
         <Tracklist />
     </div>

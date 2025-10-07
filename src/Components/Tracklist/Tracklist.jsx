@@ -6,6 +6,7 @@ function Tracklist() {
         <div className="box tracklist">
             <h2>Tracklist</h2>
             <Track />
+            <button >Save to Spotify</button>
         </div>
     );
 }
