@@ -1,10 +1,9 @@
 import './Track.css';
-import React, { useState } from 'react';
 
-function Track({ songs }) {
-
-    function handleClickToAddSong() {
-
+function Track({ songs, customPlaylist, setCustomPlaylist }) {
+    console.log(customPlaylist);
+    const handleClickToAddSong = (song) => {
+        setCustomPlaylist([...customPlaylist, song]);
 }
     return (
         <div>
@@ -17,7 +16,7 @@ function Track({ songs }) {
                     <br />
                     {song.album}
                 </p>
-                <button>+</button>
+                <button onClick={() => handleClickToAddSong(song)}>+</button>
                 <hr />
                 </div>
             ))} 

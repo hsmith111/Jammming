@@ -2,7 +2,7 @@ import './SearchResults.css';
 import Track from '../Track/Track';
 import React, { useState } from 'react';
 
-function SearchResults() {
+function SearchResults({customPlaylist, setCustomPlaylist}) {
     const [songs, setSongs] = useState([
             {
             name: "Hearing Double",
@@ -45,7 +45,7 @@ function SearchResults() {
     return (
         <div className="box searchResults">
             <h2>Search Results</h2>
-            <Track songs={songs} />
+            <Track songs={songs} setCustomPlaylist={setCustomPlaylist} customPlaylist={customPlaylist} />
         </div>
     );
 }
