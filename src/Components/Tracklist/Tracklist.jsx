@@ -2,7 +2,7 @@ import './Tracklist.css';
 import React, { useState } from 'react';
 import Track from '../Track/Track';
 
-function Tracklist({customPlaylist}) {
+function Tracklist({customPlaylist, setCustomPlaylist}) {
 
     return (
         <div className="box tracklist">
@@ -11,6 +11,8 @@ function Tracklist({customPlaylist}) {
             <Track 
                 songs={customPlaylist} 
                 customPlaylist={customPlaylist}
+                setCustomPlaylist={setCustomPlaylist}
+                isInTracklist={true}
                 />
             <button >Save to Spotify</button>
             </>

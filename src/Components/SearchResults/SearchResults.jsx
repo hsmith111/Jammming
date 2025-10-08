@@ -45,7 +45,12 @@ function SearchResults({customPlaylist, setCustomPlaylist}) {
     return (
         <div className="box searchResults">
             <h2>Search Results</h2>
-            <Track songs={songs} setCustomPlaylist={setCustomPlaylist} customPlaylist={customPlaylist} />
+            <Track 
+                songs={songs} 
+                setCustomPlaylist={setCustomPlaylist} 
+                customPlaylist={customPlaylist} 
+                isInTracklist={false}
+                />
         </div>
     );
 }

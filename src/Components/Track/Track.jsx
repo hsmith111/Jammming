@@ -1,10 +1,13 @@
 import './Track.css';
 
-function Track({ songs, customPlaylist, setCustomPlaylist }) {
-    console.log(customPlaylist);
+function Track({ songs, customPlaylist, setCustomPlaylist, isInTracklist }) {
     const handleClickToAddSong = (song) => {
         setCustomPlaylist([...customPlaylist, song]);
 }
+
+    const handleClickToRemoveSong = (songToRemove) => {
+        setCustomPlaylist(prevTracklist => prevTracklist.filter(song => song.id !== songToRemove.id));
+    }
     return (
         <div>
             {songs.map((song) => (
@@ -16,7 +19,10 @@ function Track({ songs, customPlaylist, setCustomPlaylist }) {
                     <br />
                     {song.album}
                 </p>
-                <button onClick={() => handleClickToAddSong(song)}>+</button>
+                {!isInTracklist ? 
+                    <button onClick={() => handleClickToAddSong(song)}>+</button> :
+                    <button onClick={() => handleClickToRemoveSong(song)}>-</button>
+                }
                 <hr />
                 </div>
             ))} 
