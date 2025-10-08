@@ -23,8 +23,8 @@ function Track({ songs, customPlaylist, setCustomPlaylist, isInTracklist }) {
                     {song.album}
                 </p>
                 {!isInTracklist ? 
-                    <button onClick={() => handleClickToAddSong(song)}>+</button> :
-                    <button onClick={() => handleClickToRemoveSong(song)}>-</button>
+                    <button className="addSongButton" onClick={() => handleClickToAddSong(song)}>+</button> :
+                    <button className="removeSongButton" onClick={() => handleClickToRemoveSong(song)}>x</button>
                 }
                 <hr />
                 </div>

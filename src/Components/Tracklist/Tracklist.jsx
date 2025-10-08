@@ -14,7 +14,7 @@ function Tracklist({customPlaylist, setCustomPlaylist}) {
                 setCustomPlaylist={setCustomPlaylist}
                 isInTracklist={true}
                 />
-            <button >Save to Spotify</button>
+            <button className="saveButton" >Save to Spotify</button>
             </>
         </div>
     );

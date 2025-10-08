@@ -6,7 +6,7 @@ function SearchBar() {
             <form>
                 {/* <label>🔍 Find Song: </label> */}
                 <input type="text" placeholder="🔍 Enter song title" />
-                <button>Search</button>
+                <button className="searchButton">Search</button>
             </form>
         </>
     );
