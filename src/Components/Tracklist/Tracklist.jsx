@@ -11,7 +11,6 @@ function Tracklist({customPlaylist, setCustomPlaylist}) {
     return (
         <div className="box tracklist">
             <>
-            <h2>Tracklist</h2>
             <input type="text" className="tracklistName" placeholder="Add playlist name..." />
             <button className="saveButton" >Save to Spotify</button>
             <Track 
