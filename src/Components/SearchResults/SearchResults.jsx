@@ -35,7 +35,7 @@ function SearchResults({customPlaylist, setCustomPlaylist}) {
             id: "5",
         },
             {
-            name: "Waiting on the World to Change",
+            name: "The Heart of Life",
             artist: "John Mayer",
             album: "Continuum",
             id: "6",

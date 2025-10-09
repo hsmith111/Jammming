@@ -15,18 +15,20 @@ function Track({ songs, customPlaylist, setCustomPlaylist, isInTracklist }) {
         <div>
             {songs.map((song) => (
                 <div key={song.id}>
-                <p>
-                    <strong>{song.name}</strong>
-                    <br />
-                    <em>{song.artist}</em>
-                    <br />
-                    {song.album}
-                </p>
-                {!isInTracklist ? 
-                    <button className="addSongButton" onClick={() => handleClickToAddSong(song)}>+</button> :
-                    <button className="removeSongButton" onClick={() => handleClickToRemoveSong(song)}>x</button>
-                }
-                <hr />
+                    <div className="trackInfoLayout">
+                    <p>
+                        <strong>{song.name}</strong>
+                        <br />
+                        <em>{song.artist}</em>
+                        <br />
+                        {song.album}
+                    </p>
+                    {!isInTracklist ? 
+                        <button className="addSongButton" onClick={() => handleClickToAddSong(song)}>+</button> :
+                        <button className="removeSongButton" onClick={() => handleClickToRemoveSong(song)}>x</button>
+                    }
+                    </div>
+                    <hr />
                 </div>
             ))} 
         </div>

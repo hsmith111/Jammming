@@ -1,4 +1,14 @@
 .addSongButton, .removeSongButton {
     background-color:#c6c6f3;
     font-weight: bold;
+    height: 40px;
+    margin-left: auto;
+}
+
+.trackInfoLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: left;
 }
