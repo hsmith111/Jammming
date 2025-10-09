@@ -7,7 +7,7 @@ function Tracklist({customPlaylist, setCustomPlaylist}) {
     return (
         <div className="box tracklist">
             <>
-            <h2>Tracklist</h2>
+            <input type="text" className="tracklistName" placeholder="Tracklist" />
             <Track 
                 songs={customPlaylist} 
                 customPlaylist={customPlaylist}

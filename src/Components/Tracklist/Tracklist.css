@@ -11,3 +11,15 @@
     height: 45px;
     background-color:#c6c6f3;
 }
+
+.tracklistName, .tracklistName::placeholder {
+    color: #213547;
+    width: 280px;
+    border: none;
+    display: block;
+    font-size: 1.3em;
+    text-align: center;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-weight: bold;
+}
