@@ -2,8 +2,7 @@ import './Track.css';
 
 function Track({ songs, customPlaylist, setCustomPlaylist, isInTracklist }) {
     const handleClickToAddSong = (song) => {
-        if (!customPlaylist.includes(song)) {
-
+        if (!customPlaylist.some(existingSong => existingSong.id === song.id)) {
             setCustomPlaylist([...customPlaylist, song]);
         }
 }
