@@ -13,9 +13,11 @@ function SearchBar({ setSearchResults }) {
    useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get('code');
+    console.log('URL code:', code);
 
     if (code) {
         const codeVerifier = localStorage.getItem('pkce_code_verifier');
+        console.log('Using token:', token);
 
         fetch('https://accounts.spotify.com/api/token', {
             method: 'POST',
