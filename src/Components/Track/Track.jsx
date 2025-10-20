@@ -11,25 +11,26 @@ function Track({ songs, customPlaylist, setCustomPlaylist, isInTracklist }) {
         setCustomPlaylist(prevTracklist => prevTracklist.filter(song => song.id !== songToRemove.id));
     }
     return (
-        <div>
+        <div>   
             {songs.map((song) => (
-                <div key={song.id}>
-                    <div className="trackInfoLayout">
-                    <p>
-                        <strong>{song.name}</strong>
-                        <br />
-                        <em>{song.artist}</em>
-                        <br />
-                        {song.album}
-                    </p>
-                    {!isInTracklist ? 
-                        <button className="addSongButton" onClick={() => handleClickToAddSong(song)}>+</button> :
-                        <button className="removeSongButton" onClick={() => handleClickToRemoveSong(song)}>x</button>
-                    }
-                    </div>
-                    <hr />
-                </div>
-            ))} 
+    <div key={song.id}>
+        <div className="trackInfoLayout">
+            <p>
+                <strong>{song.name}</strong>
+                <br />
+                <em>{song.artists?.map(artist => artist.name).join(', ')}</em>
+                <br />
+                {song.album?.name}
+            </p>
+            {!isInTracklist ? 
+                <button className="addSongButton" onClick={() => handleClickToAddSong(song)}>+</button> :
+                <button className="removeSongButton" onClick={() => handleClickToRemoveSong(song)}>x</button>
+            }
+        </div>
+        <hr />
+    </div>
+))}
+ 
         </div>
     );
 }
